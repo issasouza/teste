@@ -6,9 +6,9 @@ services:
     plan: standard # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
     envVars:
-      - key: MB_ENCRYPTION_SECRET_KEY="NhfbqAty0cmsaAoo5zxNwaPfYrjwFOns" java -jar metabase.jar
+      - key: MB_DB_CONNECTION_URI="dpg-cgcbog5269v4icvm79p0-a.oregon-postgres.render.com/stage_38ah" 
         fromDatabase:
-          name: stage_38ah
+          name:stage_38ah
           property: connectionString
 databases:
   - name: stage_38ah
