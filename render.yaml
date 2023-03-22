@@ -6,7 +6,8 @@ services:
     plan: starter # ensure that metabase has at least 2GB of RAM (defaults to starter)
     autoDeploy: false
     envVars:
-      - key: postgres://stage_38ah_user:NhfbqAty0cmsaAoo5zxNwaPfYrjwFOns@dpg-cgcbog5269v4icvm79p0-a.oregon-postgres.render.com/stage_38ah
+  - key: MB_DB_CONNECTION_URI
+    value: postgres://stage_38ah_user:NhfbqAty0cmsaAoo5zxNwaPfYrjwFOns@dpg-cgcbog5269v4icvm79p0-a.oregon-postgres.render.com/stage_38ah
         fromDatabase:
           name: stage_38ah
           property: connectionString
