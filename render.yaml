@@ -4,7 +4,7 @@ services:
     env: docker
     repo: https://github.com/issasouza/teste.git # optional
     plan: starter # ensure that metabase has at least 2GB of RAM (defaults to starter)
-    autoDeploy: false
+    autoDeploy: true
     envVars:
   - key: MB_DB_CONNECTION_URI
         fromDatabase:
